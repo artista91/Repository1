@@ -1,0 +1,55 @@
+<p>
+  c2 works!
+</p>
+
+
+<p appD1 > even-or-odd works!</p>
+ 
+<p>{{parentCount}}</p>
+<p>{{msg2}}</p>
+<p>{{a}} is = {{getSum()}}</p>
+
+<button 
+class="btn btn-warning"
+(click)="Send()">SEND</button>
+
+<br>
+<br>
+<br>
+<button [appBetterHighlight]
+	class="btn btn-primary"
+	[disabled]="!allowNewServer"
+	(click)="onCreateServer()">Add Server</button>
+<p>{{onCreateServer()}}</p>
+
+
+<button [appBetterHighlight]
+	class="btn btn-info"
+	[disabled]="!allowNewServer"
+	(click)="onAdd()">Add </button>
+<p>{{onAdd()}}</p>
+
+<button
+	class="btn btn-warning"
+	[disabled]="!allowNewServer"
+	(click)="onSub()">Sub</button>
+<p>{{onSub()}}</p>
+
+<button
+	class="btn btn-success"
+	[disabled]="!allowNewServer"
+	(click)="onMul()">Mul</button>
+<p>{{onMul()}}</p>
+
+<button
+	class="btn btn-danger"
+	[disabled]="!allowNewServer"
+	(click)="onDiv()">Div</button>
+<p>{{onDiv()}}</p>
+
+
+
+enter number:<input type="text" [(ngModel)]="n">
+
+
+<p appD2>{{onadd()}}</p>

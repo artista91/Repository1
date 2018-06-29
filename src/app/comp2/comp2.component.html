@@ -1,0 +1,38 @@
+
+<p appDirectiveOne>Operations</p>
+<p>{{serverName}}</p>
+Value A =<input type="{{ngModel}}"
+[(ngModel)]="a" value="0"
+/><br>
+
+Value B =<input type="{{ngModel}}"
+
+[(ngModel)]="b" value="0"/><br>
+
+
+	
+	<button
+	class="btn btn-primary"
+	(click)="getSum()">Addition</button>
+
+	<button
+
+	class="btn btn-primary"
+	(click)="getDiff()">Subtraction</button>
+
+	<button
+	class="btn btn-primary"
+	(click)="getMult()">Product</button>
+
+	<button
+	class="btn btn-primary"
+	(click)="getDiv()">Division</button>
+
+	<button
+	class="btn btn-primary"
+	(click)="getMod()">Modulas</button>
+
+
+<p>Result: {{c}}</p>
+
+<p appDirectiveTwo></p>

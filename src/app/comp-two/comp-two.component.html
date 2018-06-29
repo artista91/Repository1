@@ -1,0 +1,39 @@
+<p appDirectiveOne>Operations</p>
+
+<h1>
+  Component 2
+</h1>
+
+<div align="center">
+
+Value A <input type="text" id="1" [(ngModel)]="num1"/><br>
+Value B <input type="text" id="2" [(ngModel)]="num2"/><br>
+
+
+<button
+class="btn btn-primary"
+(click)="getSum()">ADD</button>
+<br>
+<button
+class="btn btn-primary"
+(click)="getDiff()">SUB</button>
+<br>
+<button
+class="btn btn-primary"
+(click)="getMult()">MULT</button>
+<br>
+<button
+class="btn btn-primary"
+(click)="getDiv()">DIV</button>
+<br>
+<button
+class="btn btn-primary"
+(click)="getMod()">MOD</button>
+<br>
+<p> Result :{{num3}} </p>
+
+</div>
+<p appDirectiveTwo >Styling Comp2</p>
+
+
+

@@ -1,0 +1,15 @@
+<p>{{serverName}}</p>
+Value A =<input type="text" id="1" value="{{a}}"/><br>
+Value B =<input type="text" id="2" value="{{b}}"/><br>
+
+Subtraction <input type="text" id="4" value="{{getDiff()}}"/><br>
+Multiplication <input type="text" id="5" value="{{getMult()}}"/><br>
+Division <input type="text" id="5" value="{{getDiv()}}"/><br>
+
+
+
+<button
+class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+
